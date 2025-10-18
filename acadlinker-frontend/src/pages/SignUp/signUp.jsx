@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
     return (
@@ -33,7 +34,7 @@ const SignUp = () => {
                 <div >Google Login Button</div>
             </div>
 
-            <div className="my-4 mb-10">Already on AcadLinker? <span className="text-blue-800 cursor-pointer">Sign In</span></div>
+            <div className="my-4 mb-10">Already on AcadLinker? <Link to={'/login'} className="text-blue-800 cursor-pointer">Sign in</Link></div>
             
         </div>
     )
