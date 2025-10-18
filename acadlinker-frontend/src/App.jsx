@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar1 from './components/NavbarV1/navbar1'
 import LandingPage from './pages/LandingPage/landingPage'
+import Footer from './Footer/footer'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <div className='bg-gray-100 w-[100%] h-[100%] box-border '>
         <Navbar1/>
         <LandingPage/>
+        <Footer/>
       </div>
   )
 }
