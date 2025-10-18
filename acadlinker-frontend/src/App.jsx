@@ -7,6 +7,7 @@ import LandingPage from './pages/LandingPage/landingPage'
 import Footer from './Footer/footer'
 import { Routes, Route } from 'react-router-dom'
 import SignUp from './pages/SignUp/signUp'
+import Login from './pages/Login/login'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer />
     </div>

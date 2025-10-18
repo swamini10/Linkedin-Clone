@@ -5,8 +5,8 @@ const Footer = () => {
         <div className='w-[100%] bg-gray-200 flex justify-center '>
             <div className='md:p-3 w-[100%] flex flex-col items-center py-4'>
                 <div className="flex gap-0 items-center cursor-pointer">
-                <h3 className='text-purple-800 font-bold text-xl'>AcadLinker</h3>
-                <img src="/public/logo2.png" alt="AcadlinkerLogo" className="w-8 h-7 " />
+                <h3 className='text-purple-800 font-bold text-2xl'>AcadLinker</h3>
+                <img src="/public/logo2.png" alt="AcadlinkerLogo" className="w-8 h-8 " />
             </div>
             <div className='text-sm'>@Copyright 2025 AcadLinker. All rights reserved.</div>
         </div>

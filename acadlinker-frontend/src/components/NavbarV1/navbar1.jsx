@@ -12,10 +12,8 @@ const Navbar1 = () => {
                 </div>
             </Link>
             <div className="flex box-border md:gap-4 gap-2 justify-center items-center">
-                {/* <button className="bg-purple-800 text-white py-2 px-4 rounded">Login</button>
-                <button className="bg-transparent border border-purple-800 text-purple-800 py-2 px-4 rounded">Sign Up</button> */}
-                <Link to="/signup" className="md:px-4 md:py-2 box-border text-black rounded-3xl text-2xl hover:bg-gray-200 cursor-pointer">Join now</Link>
-                <div className="px-4 py-2 box-border border-1 text-purple-800 border-purple-800 rounded-3xl text-2xl hover:bg-purple-200 cursor-pointer">Sign in</div>
+                <Link to="/signup" className="md:px-4 md:py-2 box-border text-black rounded-3xl text-x1 hover:bg-gray-200 cursor-pointer">Join now</Link>
+                <Link to="/login" className="px-4 py-2 box-border border-1 text-purple-800 border-purple-800 rounded-3xl text-x1 hover:bg-purple-200 cursor-pointer">Sign in</Link>
             </div>
         </nav>
     )
