@@ -13,7 +13,7 @@ const LandingPage = () => {
                 <Link to={'/signup'} className='mx-auto text-center mb-4 text-lg w-[70%] mt-4 pl-37'>New to AcadLinker? <span className='text-blue-800 cursor-pointer hover:underline'>Join now</span></Link>
             </div>
             <div className='md:w-[50%] h-120'>
-                <img alt="image" className='w-full h-full ' src="/public/landing-image.png" />
+                <img alt="image" className='w-full h-full ' src="/public/coding.gif" />
             </div>
         </div>
     )
