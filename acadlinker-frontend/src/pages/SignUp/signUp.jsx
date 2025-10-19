@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import GoogleLoginComp from "../../components/GoogleLogin/googleLoginComp.jsx";
 
 const SignUp = () => {
     return (
@@ -31,7 +32,7 @@ const SignUp = () => {
                     </div>
 
                 </div>
-                <div >Google Login Button</div>
+                <GoogleLoginComp/>
             </div>
 
             <div className="my-4 mb-10">Already on AcadLinker? <Link to={'/login'} className="text-blue-800 cursor-pointer">Sign in</Link></div>
