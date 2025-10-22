@@ -7,3 +7,6 @@ npm run dev
 npm i @react-oauth/google
 
 *Wrap your application with GoogleOAuthProvider
+
+*commands to install icons
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
