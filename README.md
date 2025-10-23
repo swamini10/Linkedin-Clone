@@ -1,6 +1,7 @@
 # ACADLINKER-
 
 cd .\acadlinker-frontend
+/n
 npm install 
 npm install tailwindcss @tailwindcss/vite 
 npm run dev
