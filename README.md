@@ -1,13 +1,12 @@
 # ACADLINKER-
 
-cd .\acadlinker-frontend
-/n
+<div>cd .\acadlinker-frontend </div>
 npm install 
-npm install tailwindcss @tailwindcss/vite 
+<div>npm install tailwindcss @tailwindcss/vite </div>
 npm run dev
-npm i @react-oauth/google
+<div>npm i @react-oauth/google</div>
 
-*Wrap your application with GoogleOAuthProvider
+<div>*Wrap your application with GoogleOAuthProvider</div>
 
 *commands to install icons
-npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+<div>npm install @mui/icons-material @mui/material @emotion/styled @emotion/react</div>
