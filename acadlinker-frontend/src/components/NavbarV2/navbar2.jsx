@@ -63,8 +63,8 @@ const Navbar2 = () => {
         </div>
 
         <div className='flex flex-col items-center cursor-pointer'>
-          <div><img className='w-10 h-10  rounded-full' src='/public/user1.jpg' />
-            <div className='text-sm text-gray-500'>Me</div>
+          <div><img className='w-8 h-8  rounded-full' src='/public/user1.jpg' />
+            <div className='text-sm text-gray-500'> Me</div>
           </div>
 
 
