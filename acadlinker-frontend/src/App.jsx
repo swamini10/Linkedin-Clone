@@ -10,6 +10,7 @@ import SignUp from './pages/SignUp/signUp'
 import Login from './pages/Login/login'
 import Navbar2 from './components/NavbarV2/navbar2'
 import Feeds from './pages/Feeds/feeds'
+import MyNetwork from './pages/MyNetwork/myNetwork'
 
 function App() {
   //create variable to hold login state
@@ -24,6 +25,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
         <Route path='/feeds' element={<Feeds />} />
+        <Route path='/mynetwork' element={<MyNetwork />} />
       </Routes>
       <Footer />
     </div>

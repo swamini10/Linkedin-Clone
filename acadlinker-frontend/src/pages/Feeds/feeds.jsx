@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../../components/Card/card'
 import ProfileCard from '../../components/ProfileCard/profileCard'
 import VideoCallIcon from '@mui/icons-material/VideoCall';
@@ -7,8 +7,14 @@ import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import ArticleIcon from '@mui/icons-material/Article';
 import Advertisement from '../../components/Advertisement/advertisement';
 import Post from '../../components/Post/post';
+import Modal from '../../components/Modal/modal';
+import AddModel from '../../components/AddModal/addModel';
 
-function Feeds() {
+const Feeds = () => {
+ const [addPostModal, setAddPostModal] = useState(false);
+
+ const openAddPostModal = () => setAddPostModal(true);
+ const closeAddPostModal = () => setAddPostModal(false);
   return (
     <div className='px-5 xl:px-50 py-9 flex gap-5 w-full mt-5 bg-gray-100'>
       {/* left side  */}
@@ -37,13 +43,13 @@ function Feeds() {
         <div>
           <Card padding={1}>
             <div className='flex gap-2 items-center'>
-              <img src="/public/user1.jpg"  className='rounded-4xl w-13 h-13 border-2 border-white cursor-pointer'/>
-              <div className='w-full border-1 py-3 px-4 rounded-3xl cursor-pointer hover:bg-gray-100'>Start a post </div>
+              <img src="/public/user1.jpg" className='rounded-full w-12 h-12 border-2 border-white cursor-pointer' alt="user"/>
+              <div onClick={openAddPostModal} className='w-full border py-3 px-4 rounded-3xl cursor-pointer hover:bg-gray-100'>Start a post </div>
             </div>
-            <div className='w-full flex justify mt-3'>
-              <div className='flex gap-2 p-2 cursor-pointer justify-center rounded-lg w-[33%] hover:bg-gray-100 '><VideoCallIcon sx={{color :"green"}}/> Video</div> 
-            <div className='flex gap-2 p-2 cursor-pointer justify-center rounded-lg w-[33%] hover:bg-gray-100 '><InsertPhotoIcon sx={{color :"blue"}}/> Photo</div> 
-            <div className='flex gap-2 p-2 cursor-pointer justify-center rounded-lg w-[33%] hover:bg-gray-100 '><ArticleIcon sx={{color :"orange"}}/> Article</div> 
+            <div className='w-full flex justify-between mt-3'>
+              <div onClick={openAddPostModal} className='flex gap-2 p-2 cursor-pointer justify-center rounded-lg w-[33%] hover:bg-gray-100 '><VideoCallIcon sx={{color :"green"}}/> Video</div> 
+            <div onClick={openAddPostModal} className='flex gap-2 p-2 cursor-pointer justify-center rounded-lg w-[33%] hover:bg-gray-100 '><InsertPhotoIcon sx={{color :"blue"}}/> Photo</div> 
+            <div onClick={openAddPostModal} className='flex gap-2 p-2 cursor-pointer justify-center rounded-lg w-[33%] hover:bg-gray-100 '><ArticleIcon sx={{color :"orange"}}/> Article</div> 
             </div>
           </Card>
         </div>
@@ -76,6 +82,11 @@ function Feeds() {
       </div>
       </div>
 
+      {addPostModal && 
+        <Modal closeModal={closeAddPostModal} title={"Create a post"}>
+          <AddModel />
+        </Modal>
+      }
     </div>
   )
 }

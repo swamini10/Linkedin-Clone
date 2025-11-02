@@ -5,7 +5,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import WorkIcon from '@mui/icons-material/Work';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import AddAlertOutlinedIcon from '@mui/icons-material/AddAlertOutlined';
-import { useLocation } from 'react-router-dom';
+import { useLocation,Link } from 'react-router-dom';
 
 
 const Navbar2 = () => {
@@ -37,15 +37,15 @@ const Navbar2 = () => {
       </div>
 
       <div className="hidden gap-10 md:flex">
-        <div className='flex flex-col items-center cursor-pointer'>
-          <HomeIcon sx={{ color: location.pathname === '/Feeds' ? 'black' : 'gray' }} />
-          <div className={'text-sm text-gray-500' + (location.pathname === '/Feeds' ? ' border-b-3' : ' ')}>Home</div>
-        </div>
+        <Link to={'/feeds'} className='flex flex-col items-center cursor-pointer'>
+          <HomeIcon sx={{ color: location.pathname === '/feeds' ? 'black' : 'gray' }} />
+          <div className={'text-sm text-gray-500' + (location.pathname === '/feeds' ? ' border-b-3' : ' ')}>Home</div>
+        </Link>
 
-        <div className='flex flex-col items-center cursor-pointer'>
+        <Link to={'/mynetwork'} className='flex flex-col items-center cursor-pointer'>
           <PeopleIcon sx={{ color: location.pathname === '/mynetwork' ? 'black' : 'gray' }} />
           <div className={'text-sm text-gray-500' + (location.pathname === '/mynetwork' ? ' border-b-3' : ' ')}>My Network</div>
-        </div>
+        </Link>
 
         <div className='flex flex-col items-center cursor-pointer'>
           <WorkIcon sx={{ color: location.pathname === '/resume' ? 'black' : 'gray' }} />
