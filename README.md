@@ -1,6 +1,6 @@
 # ACADLINKER-
-
-<div>cd .\acadlinker-frontend </div>
+cd .\acadlinker-frontend
+<div> </div>
 npm install 
 npm run dev
 <div>npm install tailwindcss @tailwindcss/vite </div>

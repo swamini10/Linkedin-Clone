@@ -5,7 +5,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import WorkIcon from '@mui/icons-material/Work';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import AddAlertOutlinedIcon from '@mui/icons-material/AddAlertOutlined';
-import { useLocation,Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 
 const Navbar2 = () => {
@@ -47,20 +47,20 @@ const Navbar2 = () => {
           <div className={'text-sm text-gray-500' + (location.pathname === '/mynetwork' ? ' border-b-3' : ' ')}>My Network</div>
         </Link>
 
-        <div className='flex flex-col items-center cursor-pointer'>
+        <Link to={'/resume'} className='flex flex-col items-center cursor-pointer'>
           <WorkIcon sx={{ color: location.pathname === '/resume' ? 'black' : 'gray' }} />
           <div className={'text-sm text-gray-500' + (location.pathname === '/resume' ? ' border-b-3' : ' ')}>Resume</div>
-        </div>
+        </Link>
 
-        <div className='flex flex-col items-center cursor-pointer'>
+        <Link to={'/messages'} className='flex flex-col items-center cursor-pointer'>
           <ChatOutlinedIcon sx={{ color: location.pathname === '/messages' ? 'black' : 'gray' }} />
           <div className={'text-sm text-gray-500' + (location.pathname === '/messages' ? ' border-b-3' : ' ')}>Messages</div>
-        </div>
+        </Link>
 
-        <div className='flex flex-col items-center cursor-pointer'>
+        <Link to={'/notifications'} className='flex flex-col items-center cursor-pointer'>
           <div><AddAlertOutlinedIcon sx={{ color: location.pathname === '/notifications' ? 'black' : 'gray' }} /><span className='p-1 rounded-full text-sm bg-red-700 text-white' >1</span> </div>
           <div className={'text-sm text-gray-500' + (location.pathname === '/notifications' ? ' border-b-3' : ' ')}>Notifications</div>
-        </div>
+        </Link>
 
         <div className='flex flex-col items-center cursor-pointer'>
           <div><img className='w-8 h-8  rounded-full' src='/public/user1.jpg' />

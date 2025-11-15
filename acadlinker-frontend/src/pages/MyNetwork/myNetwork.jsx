@@ -23,10 +23,22 @@ const MyNetwork = () => {
             </div>
             <div className='flex h-[80vh] w-full gap-7 items-start justify-center'>
                 <div className='w-[23%] h-[270px] sm:w-full'>
-                    <ProfileCard/>
-                    </div>
+                    <ProfileCard />
+                </div>
+                <div className='w-[23%] h-[270px] sm:w-full'>
+                    <ProfileCard />
+                </div>
+                <div className='w-[23%] h-[270px] sm:w-full'>
+                    <ProfileCard />
+                </div>
+                <div className='w-[23%] h-[270px] sm:w-full'>
+                    <ProfileCard />
+                </div>
+                <div className='w-[23%] h-[270px] sm:w-full'>
+                    <ProfileCard />
                 </div>
             </div>
+        </div>
     )
 }
 
