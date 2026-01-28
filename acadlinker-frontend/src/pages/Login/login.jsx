@@ -5,7 +5,7 @@ import GoogleLoginComp from "../../components/GoogleLogin/googleLoginComp.jsx";
 const Login = () => {
     return (
         <div className="w-full flex flex-col items-center justify-center ">
-            <div className="text-4xl mb-5">Sign in to continue to AcadLinker</div>
+            <div className="text-4xl mb-5">Sign in to continue to Linkedin</div>
             <div className="w-[85%] md:w-[28%] shadow-xl rounded-sm box p-10">
                 <div className="text-3xl">Welcome back ! </div>
                 <div className="my-5">
@@ -31,7 +31,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-4 mb-10">New to AcadLinker? <Link to={'/signUp'} className="text-blue-800 cursor-pointer">Join Now</Link></div>
+            <div className="my-4 mb-10">New to Linkedin? <Link to={'/signUp'} className="text-blue-800 cursor-pointer">Join Now</Link></div>
          </div>
     )
 }

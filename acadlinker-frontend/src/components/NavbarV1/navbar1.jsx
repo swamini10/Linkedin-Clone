@@ -7,8 +7,8 @@ const Navbar1 = () => {
         <nav className='w-[100%] bg-gray-100 md:px-[100px] px-[20px] flex justify-between py-4 box-border'>
             <Link to="/" className="flex justify-between">
                 <div className="flex gap-0 items-center cursor-pointer">
-                    {<h1 className="text-purple-800 font-bold text-3xl">ACADLINKER</h1>}
-                    <img src="/public/logo2.png" alt="AcadlinkerLogo" className="w-11 h-10 " />
+                    {<h1 className="text-purple-800 font-bold text-3xl">LINKEDIN</h1>}
+                    <img src="/public/logo2.png" alt="LinkedinLogo" className="w-11 h-10 " />
                 </div>
             </Link>
             <div className="flex box-border md:gap-4 gap-2 justify-center items-center">

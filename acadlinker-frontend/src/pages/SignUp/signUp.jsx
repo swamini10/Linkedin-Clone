@@ -35,7 +35,7 @@ const SignUp = () => {
                 <GoogleLoginComp/>
             </div>
 
-            <div className="my-4 mb-10">Already on AcadLinker? <Link to={'/login'} className="text-blue-800 cursor-pointer">Sign in</Link></div>
+            <div className="my-4 mb-10">Already on Linkedin? <Link to={'/login'} className="text-blue-800 cursor-pointer">Sign in</Link></div>
             
         </div>
     )

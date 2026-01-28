@@ -64,7 +64,7 @@ const Feeds = () => {
       <div className='w-[26%] py-5 hidden md:block'>
         <div >
           <Card padding={1}>
-            <div className='text-xl'>AcadLinker News</div>
+            <div className='text-xl'>Linkedin News</div>
             <div className='text-gray-600'>Top stories</div>
             <div className='my-1'>
               <div className='text-md'> Buffett to remain Berkshire chair</div>
