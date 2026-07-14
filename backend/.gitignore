@@ -1,0 +1,10 @@
+# Gradle files
+.gradle
+build
+
+# Lucene index files
+lucene
+
+uploads/*
+!uploads/.gitkeep
+bin
